@@ -26,10 +26,8 @@ Grupo: DAM
 
 /// Aquí el código: --->
 
-	```bash
 	git branch valor_referencia o git checkout -b valor_referencia
 	git checkout valor_referencia
-    ```
 	
 - Creo la clase Clase.java, modifico la clase Main.java y lo comiteo:	
 	 ![carpetas iniciales](img/4.png)
@@ -37,11 +35,9 @@ Grupo: DAM
 
 /// Aquí el código: --->
 	   
-	 ```bash
 	 git status
 	 git add .
 	 git commit -m "probando paso por valor y referencia"
-     ```
 	 
 - Hago cambios en la clase Clase.java y también en Main.java y lo comiteo 
 	 
@@ -49,11 +45,9 @@ Grupo: DAM
 	 
 /// Aquí el código: --->
 	 
-	  ```bash
 	 git status
 	 git add .
 	 git commit -m "corregido y mejorado"
-     ```
 
 ** 4. Hacemos un push de la rama valor_referencia. **
 
@@ -67,10 +61,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->
 	
-	 ```bash
 	 git checkout master
 	 git merge valor_referencia
-     ```
 
 ** 6. Creamos una rama paso_arrays y la desarrollamos. **
 
@@ -80,10 +72,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->
 	
-	```bash
 	 git checkout master
 	 git merge valor_referencia
-     ```
 	
 - Modifico el Main.java y hago comit de ello:
 
@@ -91,11 +81,9 @@ Grupo: DAM
 	
 /// Aquí el código: --->
 	
-	```bash
 	 git status
 	 git add .
 	 git commit -m "paso_arrays"
-     ```
 		
 ** 7. Hacemos un merge a master. **
 
@@ -105,10 +93,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->	
 	
-	```bash
 	 git checkout master
 	 git merge paso_arrays
-     ```
 
 ** 8. Creamos las ramas comparando_objetos y comparando_strings y las desarrollamos. **
 
@@ -118,10 +104,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->	
 	
-	```bash
 	 git branch comparando_objetos o git checkout -b comparando_objetos
-	 git branch comparando_strings o git checkout -b comparando_strings
-     ```
+	 git branch comparando_strings o git checkout -b comparando_strings     
 	 	 
 - Me cambio a la Rama Comparando_strings:
 
@@ -129,9 +113,7 @@ Grupo: DAM
 	
 /// Aquí el código: --->	
 	
-	```bash
 	 git checkout comparando_strings
-     ```
 	
 - Creo la Clase CompareWithEquals.java:
 
@@ -139,11 +121,9 @@ Grupo: DAM
 
 /// Aquí el código: --->
 	
-	```bash
 	 git status
 	 git add .
-	 git commit -m "probando equals con strings"
-     ```
+	 git commit -m "probando equals con strings"    
 	
 - Me cambio a la Rama Comparando_objetos
 
@@ -151,21 +131,17 @@ Grupo: DAM
 		
 /// Aquí el código: --->	
 		
-	```bash
 	 git checkout comparando_objetos
-     ```
 
 - Realizo cambios en el CompareWithEquals.Java, creo la Clase Persona.java y lo comiteamos:
 
 	![carpetas iniciales](img/14.png)
 	
 /// Aquí el código: --->
-	
-	```bash
+
 	 git status
 	 git add .
 	 git commit -m "ejemplos de uso de equals con objetos"
-     ```
 
 ** 9. Hacemos merge de ambas a master, solventando el conflicto. **
 
@@ -175,10 +151,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->
 	
-	```bash
 	 git checkout master
 	 git merge comparando_strings
-     ```
 	 
 - Ahora hago Merge con Comparando_objetos y tenemos un conflicto, ya que Comparando_strings y Comparando_objetos tienen el mismo archivo: y diferente contendio
 
@@ -186,9 +160,7 @@ Grupo: DAM
 
 /// Aquí el código: --->
 	
-	```bash
 	 git merge comparando_objetos
-     ```
 	 
 - Lo soluciono cambiando el contenido y lo comiteo:
 
@@ -196,11 +168,9 @@ Grupo: DAM
 	 
 /// Aquí el código: --->
 	 
-	 ```bash
 	 git status
 	 git add .
 	 git commit -m "merge de comparando_strings solventando conflicto"
-     ```
 	 
 ** 10. Creamos la rama "reestructurando" para reorganizar en paquetes. Una vez desarrollada hacemos merge a master
 (es recomendable ver el estado de los ficheros de este commit, más que el diff). **
@@ -211,10 +181,8 @@ Grupo: DAM
 	
 /// Aquí el código: --->
 	
-	```bash
 	 git branch reestructurando o git checkout -b reestructurando
 	 git checkout reestructurando
-     ```
 
 - Creo los paquetes y realizo las modificaciones en las clases .java necesarias y meto las clases ya creadas anteriormente en sus paquetes correspodientes.
 
@@ -225,20 +193,17 @@ La Clase Main.Java ahora pasa a llamarse PasoObjetos:
 	![carpetas iniciales](img/19.png)
 	
 /// Aquí el código: --->
-	
-	```bash
+
 	 git status
 	 git add .
 	 git commit -m "ordenando en paquetes"
-     ```
 
 - Me cambio a la Rama Master y lo mergeo con Reestructurando:
 
 	![carpetas iniciales](img/20.png)
 	
 /// Aquí el código: --->
-	
-	```bash
+
 	 git checkout master
 	 git merge reestructurando
      ```
@@ -254,13 +219,11 @@ La Clase Main.Java ahora pasa a llamarse PasoObjetos:
 ![carpetas iniciales](img/22.png)
 
 /// Aquí el código: --->
-	
-		```bash
+		
 	 git checkout valor_referencia
 	 git status
 	 git add .
-	 git commit -m "corrección menor: escape de comilla"
-     ```
+	 git commit -m "corrección menor: escape de comilla"     
 	 
 - En este punto me dió un error un poco extraño:
 
@@ -272,24 +235,20 @@ La Clase Main.Java ahora pasa a llamarse PasoObjetos:
 		
 /// Aquí el código: --->
 	
-	```bash
 	 git checkout master
 	 git merge valor_referencia
 	 git status
 	 git add .
-	 git commit -m "Merge branch 'valor_referencia'"
-     ```
+	 git commit -m "Merge branch 'valor_referencia'"    
 	  
 - Ahora tan sólo queda subir la rama Master y todo su contenido:
 
 	![carpetas iniciales](img/25.png)
 	
 /// Aquí el código: --->
-	
-	```bash
+		
 	 git remote add origin https://github.com/Joseaquinterom/ed-examen-git-1t.git
-	 git push -u origin master
-     ```
+	 git push -u origin master     
 
 - Por último subo todas las ramas a la vez y su contenido
 
@@ -297,6 +256,4 @@ La Clase Main.Java ahora pasa a llamarse PasoObjetos:
 
 /// Aquí el código: --->
 
-	 ```bash
-	 git push --all
-     ```
+	 git push --all     
