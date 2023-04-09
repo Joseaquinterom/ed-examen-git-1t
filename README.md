@@ -297,6 +297,8 @@ La Clase Main.Java ahora pasa a llamarse PasoObjetos:
 
 	![carpetas iniciales](img/26.png)
 
+/// Aquí el código: --->
+
 	 ```bash
 	 git push --all
      ```
