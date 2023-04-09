@@ -13,13 +13,11 @@ Grupo: DAM
 	![carpetas iniciales](img/2.png)
 
 /// Aquí el código: --->
-
-	```bash
+	
 	git status
 	git add .
 	git commit -m "proyecto base"
-    ```
-
+   
 ** 3. Creamos y desarrollamos la rama valor_referencia. **
 
 - Creo la rama valor_referencia y me cambio a esa rama:
